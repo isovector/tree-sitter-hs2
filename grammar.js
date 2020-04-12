@@ -72,7 +72,7 @@ module.exports = grammar({
   ],
 
   extras: $ => [
-    $.comment,
+    $._comment,
     /\s|\\n/
   ],
 
@@ -1588,7 +1588,7 @@ module.exports = grammar({
 
     language_name: $ => /[A-Z](\w|')*/,
 
-    comment: $ => token(choice(
+    _comment: $ => token(choice(
       seq('--', /.*/),
       seq(
         '{-',

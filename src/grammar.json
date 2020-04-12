@@ -7315,7 +7315,7 @@
       "type": "PATTERN",
       "value": "[A-Z](\\w|')*"
     },
-    "comment": {
+    "_comment": {
       "type": "TOKEN",
       "content": {
         "type": "CHOICE",
@@ -8374,7 +8374,7 @@
   "extras": [
     {
       "type": "SYMBOL",
-      "name": "comment"
+      "name": "_comment"
     },
     {
       "type": "PATTERN",

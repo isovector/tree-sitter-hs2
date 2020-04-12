@@ -7,9 +7,7 @@ Single Line Comments
 
 ---
 
-(module
-  (comment)
-  (comment))
+(module)
 
 =========================================
 Multi-Line Comments
@@ -24,6 +22,4 @@ Multi-Line Comments
 
 ---
 
-(module
-  (comment)
-  (comment))
+(module)
