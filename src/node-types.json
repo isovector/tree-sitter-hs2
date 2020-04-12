@@ -5847,10 +5847,6 @@
           "named": true
         },
         {
-          "type": "options_ghc_pragma",
-          "named": true
-        },
-        {
           "type": "overlappable_pragma",
           "named": true
         },
@@ -5963,10 +5959,6 @@
         },
         {
           "type": "no_unpack_pragma",
-          "named": true
-        },
-        {
-          "type": "options_ghc_pragma",
           "named": true
         },
         {
@@ -6763,10 +6755,6 @@
           "named": true
         },
         {
-          "type": "options_ghc_pragma",
-          "named": true
-        },
-        {
           "type": "overlappable_pragma",
           "named": true
         },
@@ -7049,21 +7037,6 @@
     "type": "no_unpack_pragma",
     "named": true,
     "fields": {}
-  },
-  {
-    "type": "options_ghc_pragma",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "option",
-          "named": true
-        }
-      ]
-    }
   },
   {
     "type": "overlappable_pragma",
@@ -9710,10 +9683,6 @@
           "named": true
         },
         {
-          "type": "options_ghc_pragma",
-          "named": true
-        },
-        {
           "type": "overlappable_pragma",
           "named": true
         },
@@ -10050,10 +10019,6 @@
     "named": false
   },
   {
-    "type": "OPTIONS_GHC",
-    "named": false
-  },
-  {
     "type": "OVERLAPPABLE",
     "named": false
   },
@@ -10320,10 +10285,6 @@
   {
     "type": "of",
     "named": false
-  },
-  {
-    "type": "option",
-    "named": true
   },
   {
     "type": "pattern",

@@ -5246,8 +5246,12 @@
       "name": "_constructor_identifier"
     },
     "type_class_identifier": {
-      "type": "SYMBOL",
-      "name": "_constructor_identifier"
+      "type": "PREC",
+      "value": -1,
+      "content": {
+        "type": "SYMBOL",
+        "name": "_constructor_identifier"
+      }
     },
     "qualified_constructor_identifier": {
       "type": "SEQ",
@@ -5916,10 +5920,6 @@
         },
         {
           "type": "SYMBOL",
-          "name": "options_ghc_pragma"
-        },
-        {
-          "type": "SYMBOL",
           "name": "source_pragma"
         },
         {
@@ -6272,27 +6272,6 @@
               "name": "instance_spec"
             }
           ]
-        },
-        {
-          "type": "STRING",
-          "value": "#-}"
-        }
-      ]
-    },
-    "options_ghc_pragma": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "{-#"
-        },
-        {
-          "type": "STRING",
-          "value": "OPTIONS_GHC"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "option"
         },
         {
           "type": "STRING",
@@ -8418,10 +8397,6 @@
     [
       "qualified_constructor_identifier",
       "qualified_type_constructor_identifier"
-    ],
-    [
-      "type_constructor_identifier",
-      "type_class_identifier"
     ],
     [
       "labeled_pattern",

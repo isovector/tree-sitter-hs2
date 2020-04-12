@@ -88,7 +88,6 @@ module.exports = grammar({
     [$.constructor_identifier, $.type_constructor_identifier],
     [$.qualified_type_constructor_identifier, $.qualified_type_class_identifier],
     [$.qualified_constructor_identifier, $.qualified_type_constructor_identifier],
-    [$.type_constructor_identifier, $.type_class_identifier],
     [$.labeled_pattern, $._a_expression, $.labeled_construction],
     [$._a_expression, $.labeled_construction],
     [$._constructor_identifier, $._module_identifier],
@@ -1211,7 +1210,7 @@ module.exports = grammar({
     type_constructor_identifier: $ => $._constructor_identifier,
 
     // Higher precedence here to disambiguate scontext
-    type_class_identifier: $ => $._constructor_identifier,
+    type_class_identifier: $ => prec(-1, $._constructor_identifier),
 
     qualified_constructor_identifier: $ => seq(
       choice($.qualified_module_identifier, $.module_identifier),
@@ -1325,7 +1324,6 @@ module.exports = grammar({
       $.inlinable_pragma,
       $.no_inline_pragma,
       $.specialization_pragma,
-      $.options_ghc_pragma,
       $.source_pragma,
       $.include_pragma,
       $.warning_pragma,
@@ -1378,13 +1376,6 @@ module.exports = grammar({
         sep1(',', $.spec),
         $.instance_spec
       ),
-      '#-}'
-    ),
-
-    options_ghc_pragma: $ => seq(
-      '{-#',
-      'OPTIONS_GHC',
-      $.option,
       '#-}'
     ),
 
