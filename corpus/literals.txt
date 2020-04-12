@@ -1,0 +1,131 @@
+=========================================
+Integer Literals
+=========================================
+
+0
+1
+
+---
+
+(module
+  (integer)
+  (integer))
+
+=========================================
+Octal Literals
+=========================================
+
+0o00
+0O77
+
+---
+
+(module
+  (integer)
+  (integer))
+
+=========================================
+Hexidecimal Literals
+=========================================
+
+0x00
+0XFF
+
+---
+
+(module
+  (integer)
+  (integer))
+
+=========================================
+Float Literals
+=========================================
+
+0.00
+0.99
+
+---
+
+(module
+  (float)
+  (float))
+
+=========================================
+Float Literals With Exponents
+=========================================
+
+0.00e01
+0.99E01
+0.00e+01
+0.99E-01
+0.00e-01
+0.99E+01
+
+00e01
+99E01
+00e+01
+99E-01
+00e-01
+99E+01
+
+---
+
+(module
+  (float)
+  (float)
+  (float)
+  (float)
+  (float)
+  (float)
+
+  (float)
+  (float)
+  (float)
+  (float)
+  (float)
+  (float))
+
+
+=========================================
+Variable Identifiers
+=========================================
+
+--a
+--_a0
+--_A0
+--a0
+--a9
+--aA
+--aZ'
+
+---
+
+(module
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment))
+
+=========================================
+Constructor Identifiers
+=========================================
+
+--A
+--A0
+--A9
+--Aa
+--A_
+--Az'
+
+---
+
+(module
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment))

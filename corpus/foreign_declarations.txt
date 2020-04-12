@@ -1,0 +1,195 @@
+=========================================
+Foreign Import Declarations
+=========================================
+
+foreign import ccall example :: Example
+foreign import stdcall example :: Example
+foreign import cplusplus example :: Example
+foreign import jvm example :: Example
+foreign import dotnet example :: Example
+
+---
+
+(module
+  (foreign
+    (foreign_import)
+    (calling_convention)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_import)
+    (calling_convention)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_import)
+    (calling_convention)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_import)
+    (calling_convention)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_import)
+    (calling_convention)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor)))))
+
+=========================================
+Foreign Import Declarations With Safety
+=========================================
+
+foreign import ccall safe "safe import" example :: Example
+foreign import stdcall unsafe "unsafe import" example :: Example
+foreign import cplusplus safe "safe import" example :: Example
+foreign import jvm unsafe "unsafe import" example :: Example
+foreign import dotnet unsafe "unsafe import" example :: Example
+
+---
+
+(module
+  (foreign
+    (foreign_import)
+    (calling_convention)
+    (safety)
+    (string)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_import)
+    (calling_convention)
+    (safety)
+    (string)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_import)
+    (calling_convention)
+    (safety)
+    (string)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_import)
+    (calling_convention)
+    (safety)
+    (string)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_import)
+    (calling_convention)
+    (safety)
+    (string)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor)))))
+
+=========================================
+Foreign Export Declarations
+=========================================
+
+foreign export ccall example :: Example
+foreign export stdcall example :: Example
+foreign export cplusplus example :: Example
+foreign export jvm example :: Example
+foreign export dotnet example :: Example
+
+---
+
+(module
+  (foreign
+    (foreign_export)
+    (calling_convention)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_export)
+    (calling_convention)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_export)
+    (calling_convention)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_export)
+    (calling_convention)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_export)
+    (calling_convention)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor)))))
+
+=========================================
+Foreign Export Declarations With Safety
+=========================================
+
+foreign export ccall safe "safe import" example :: Example
+foreign export stdcall unsafe "unsafe import" example :: Example
+foreign export cplusplus safe "safe import" example :: Example
+foreign export jvm unsafe "unsafe import" example :: Example
+foreign export dotnet unsafe "unsafe import" example :: Example
+
+---
+
+(module
+  (foreign
+    (foreign_export)
+    (calling_convention)
+    (safety)
+    (string)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_export)
+    (calling_convention)
+    (safety)
+    (string)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_export)
+    (calling_convention)
+    (safety)
+    (string)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_export)
+    (calling_convention)
+    (safety)
+    (string)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor))))
+  (foreign
+    (foreign_export)
+    (calling_convention)
+    (safety)
+    (string)
+    (type_signature
+      (variable_identifier)
+      (type (type_constructor)))))

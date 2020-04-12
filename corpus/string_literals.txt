@@ -1,0 +1,262 @@
+=========================================
+String Literals [a-zA-Z0-9_]
+=========================================
+
+"a"
+"b"
+
+"0"
+"1"
+
+"_"
+
+"A"
+"B"
+
+---
+
+(module
+  (string)
+  (string)
+
+  (string)
+  (string)
+
+  (string)
+
+  (string)
+  (string))
+
+=========================================
+String Literals Symbols
+=========================================
+
+"!"
+"#"
+"$"
+"%"
+"&"
+"⋆"
+"+"
+"."
+"/"
+"<"
+"="
+">"
+"?"
+"^"
+"|"
+"-"
+"~"
+":"
+"\\"
+
+"\""
+"'"
+
+---
+
+(module
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+
+  (string)
+  (string))
+
+
+=========================================
+String Literals Special Symbols
+=========================================
+
+"("
+")"
+";"
+"["
+"]"
+"`"
+"{"
+"}"
+
+---
+
+(module
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string))
+
+=========================================
+String Literals Character Escape
+=========================================
+
+"\a"
+"\b"
+"\f"
+"\n"
+"\r"
+"\t"
+"\v"
+"\\"
+"\""
+"'"
+"\&"
+
+---
+
+(module
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string))
+
+=========================================
+String Literals Space
+=========================================
+
+" "
+
+---
+
+(module
+  (string))
+
+=========================================
+String Literals Escape Ascii
+=========================================
+
+"\NUL"
+"\SOH"
+"\STX"
+"\ETX"
+"\EOT"
+"\ENQ"
+"\ACK"
+"\BEL"
+"\BS"
+"\HT"
+"\LF"
+"\VT"
+"\FF"
+"\CR"
+"\SO"
+"\SI"
+"\DLE"
+"\DC1"
+"\DC2"
+"\DC3"
+"\DC4"
+"\NAK"
+"\SYN"
+"\ETB"
+"\CAN"
+"\EM"
+"\SUB"
+"\ESC"
+"\FS"
+"\GS"
+"\RS"
+"\US"
+"\SP"
+"\DEL"
+
+---
+
+(module
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string))
+
+=========================================
+String Literals Escape Control Characters
+=========================================
+
+"\^A"
+"\^Z"
+"\^@"
+"\^["
+"\^]"
+"\^\"
+"\^^"
+"\^_"
+
+---
+
+(module
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string)
+  (string))
+
+=========================================
+String Literals Gap Characters
+=========================================
+
+"\n\tHaskell is wonderful.\n"
+
+---
+
+(module
+  (string))

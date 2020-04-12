@@ -1,0 +1,203 @@
+=========================================
+Import Declaration
+=========================================
+
+module A where
+
+import Maybe
+import Either()
+
+---
+
+(module
+  (module_identifier)
+  (where
+    (import (module_identifier))
+    (import
+      (module_identifier)
+      (import_specification))))
+
+=========================================
+Import Declaration With Constructor
+=========================================
+
+module A where
+
+import Data.Maybe (Maybe(..))
+
+---
+
+(module
+  (module_identifier)
+  (where
+    (import
+      (module_identifier)
+      (import_specification (constructor_identifier)))))
+
+=========================================
+Import Declaration With Functions
+=========================================
+
+module A where
+
+import Data.Maybe (fromMaybe, fromJust)
+
+---
+
+(module
+  (module_identifier)
+  (where
+    (import
+      (module_identifier)
+      (import_specification (variable_identifier) (variable_identifier)))))
+
+=========================================
+Import Declaration With Constructor And Functions
+=========================================
+
+module A where
+
+import Data.Maybe (Maybe(..), fromMaybe, fromJust)
+
+---
+
+(module
+  (module_identifier)
+  (where
+    (import
+      (module_identifier)
+      (import_specification
+        (constructor_identifier)
+        (variable_identifier)
+        (variable_identifier)))))
+
+=========================================
+Import Declaration With Qualified
+=========================================
+
+module A where
+
+import qualified Data.Maybe
+import qualified Either ()
+import qualified Data.Function (fix)
+
+---
+
+(module
+  (module_identifier)
+  (where
+    (import
+      (module_identifier))
+    (import
+      (module_identifier)
+      (import_specification))
+    (import
+      (module_identifier)
+      (import_specification (variable_identifier)))))
+
+=========================================
+Import Declaration With Qualified, As
+=========================================
+
+module A where
+
+import qualified Data.Maybe as DM
+import qualified Either as E ()
+
+---
+
+(module
+  (module_identifier)
+  (where
+    (import
+      (module_identifier)
+      (module_identifier))
+    (import
+      (module_identifier)
+      (module_identifier)
+      (import_specification))))
+
+=========================================
+Import Declaration With As, Constructor And Function
+=========================================
+
+module A where
+
+import Data.Maybe as DM (Maybe(..), fromMaybe)
+
+---
+
+(module
+  (module_identifier)
+  (where
+    (import
+      (module_identifier)
+      (module_identifier)
+      (import_specification
+        (constructor_identifier)
+        (variable_identifier)))))
+
+=========================================
+Import Declaration With Qualified, As, Constructor And Function
+=========================================
+
+module A where
+
+import qualified Data.Maybe as M (Maybe(..), fromMaybe)
+
+---
+
+(module
+  (module_identifier)
+  (where
+    (import
+      (module_identifier)
+      (module_identifier)
+      (import_specification (constructor_identifier) (variable_identifier)))))
+
+=========================================
+Import Declaration With Hiding, Constructor and Function
+=========================================
+
+module A where
+
+import Data.Maybe hiding (Maybe(..), fromMaybe)
+
+---
+
+(module
+  (module_identifier)
+  (where
+    (import
+      (module_identifier)
+      (import_specification (constructor_identifier) (variable_identifier)))))
+
+=========================================
+Import Declaration With Qualified, Hiding, Constructor and Function
+=========================================
+
+module A where
+
+import qualified Data.Maybe hiding ()
+import qualified Data.Either hiding (Either(..), decodeEither)
+import qualified Data.Function hiding (fix)
+import qualified Data.List as DL hiding (head)
+
+---
+
+(module
+  (module_identifier)
+  (where
+    (import
+      (module_identifier)
+      (import_specification))
+    (import
+      (module_identifier)
+      (import_specification (constructor_identifier) (variable_identifier)))
+    (import
+      (module_identifier)
+      (import_specification (variable_identifier)))
+    (import
+      (module_identifier)
+      (module_identifier)
+      (import_specification (variable_identifier)))))
