@@ -103,9 +103,9 @@ module.exports = grammar({
     [$._lexp, $.function_application],
     [$.quasi_quotation, $.variable_identifier],
     [$._lexp, $._a_expression],
-    [$.instance, $.simple_class],
 
-    [$.simple_class]
+    [$.simple_class],
+    [$.instance, $.simple_class],
   ],
 
   rules: {
