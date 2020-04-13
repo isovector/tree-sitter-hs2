@@ -188,7 +188,7 @@ instance (Eq a) => Eq (Foo a) where {
       (simple_class (type_class_identifier) (type_variable_identifier)))
       (type_class_identifier)
       (instance
-        (parenthesized_instance (type_constructor_identifier) (type_variable_identifier)))
+        (parenthesized_constructor (type_constructor_identifier) (type_variable_identifier)))
         (where
           (specialization_pragma
             (instance_spec
@@ -611,7 +611,7 @@ instance {-# OVERLAPPING #-} C Int [Int] where {}
     (overlapping_pragma)
     (type_class_identifier)
     (instance
-      (type_constructor_identifier) (list_instance (type_constructor_identifier)))
+      (type_constructor_identifier) (list_type (type_constructor_identifier)))
     (where)))
 
 =========================================
@@ -666,7 +666,7 @@ instance {-# INCOHERENT #-} (Show a, Show b) => C a [b] where {}
     (type_class_identifier)
     (instance
       (type_variable_identifier)
-      (list_instance (type_variable_identifier)))
+      (list_type (type_variable_identifier)))
     (where)))
 
 =========================================

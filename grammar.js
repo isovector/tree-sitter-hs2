@@ -105,6 +105,7 @@ module.exports = grammar({
 
     [$.simple_class],
     [$.instance, $.simple_class],
+    [$._atype, $.simple_class],
   ],
 
   rules: {
@@ -842,10 +843,8 @@ module.exports = grammar({
     type_class_declaration: $ => seq(
       'class',
       optional($.scontext),
-      seq(
-        $.type_class_identifier,
-        repeat($.type_variable_identifier)
-      ),
+      $.type_class_identifier,
+      repeat($.type_variable_identifier),
       $.where
     ),
 
@@ -859,18 +858,11 @@ module.exports = grammar({
       )),
       optional($.scontext),
       choice($.qualified_type_class_identifier, $.type_class_identifier),
-      $.instance,
+      optional($.instance),
       $.where
     ),
 
-    instance: $ => repeat1(choice(
-      $._general_type_constructor,
-      $.parenthesized_instance,
-      $.tuple_instance,
-      $.list_instance,
-      $.function_type_instance,
-      $.type_variable_identifier
-    )),
+    instance: $ => repeat1($._atype),
 
     parenthesized_instance: $ => seq(
       '(',

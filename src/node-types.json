@@ -3856,21 +3856,6 @@
     }
   },
   {
-    "type": "function_type_instance",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "type_variable_identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "generator",
     "named": true,
     "fields": {},
@@ -4963,19 +4948,15 @@
           "named": true
         },
         {
-          "type": "function_type_instance",
-          "named": true
-        },
-        {
           "type": "list_constructor",
           "named": true
         },
         {
-          "type": "list_instance",
+          "type": "list_type",
           "named": true
         },
         {
-          "type": "parenthesized_instance",
+          "type": "parenthesized_constructor",
           "named": true
         },
         {
@@ -4987,7 +4968,7 @@
           "named": true
         },
         {
-          "type": "tuple_instance",
+          "type": "tuple_type",
           "named": true
         },
         {
@@ -6499,49 +6480,6 @@
     }
   },
   {
-    "type": "list_instance",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "function_constructor",
-          "named": true
-        },
-        {
-          "type": "list_constructor",
-          "named": true
-        },
-        {
-          "type": "promoted",
-          "named": true
-        },
-        {
-          "type": "qualified_type_constructor_identifier",
-          "named": true
-        },
-        {
-          "type": "tupling_constructor",
-          "named": true
-        },
-        {
-          "type": "type_constructor_identifier",
-          "named": true
-        },
-        {
-          "type": "type_variable_identifier",
-          "named": true
-        },
-        {
-          "type": "unit_constructor",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "list_pattern",
     "named": true,
     "fields": {},
@@ -7262,49 +7200,6 @@
         },
         {
           "type": "variable_operator",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "parenthesized_instance",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "function_constructor",
-          "named": true
-        },
-        {
-          "type": "list_constructor",
-          "named": true
-        },
-        {
-          "type": "promoted",
-          "named": true
-        },
-        {
-          "type": "qualified_type_constructor_identifier",
-          "named": true
-        },
-        {
-          "type": "tupling_constructor",
-          "named": true
-        },
-        {
-          "type": "type_constructor_identifier",
-          "named": true
-        },
-        {
-          "type": "type_variable_identifier",
-          "named": true
-        },
-        {
-          "type": "unit_constructor",
           "named": true
         }
       ]
@@ -9105,49 +9000,6 @@
         },
         {
           "type": "variable_operator",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "tuple_instance",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "function_constructor",
-          "named": true
-        },
-        {
-          "type": "list_constructor",
-          "named": true
-        },
-        {
-          "type": "promoted",
-          "named": true
-        },
-        {
-          "type": "qualified_type_constructor_identifier",
-          "named": true
-        },
-        {
-          "type": "tupling_constructor",
-          "named": true
-        },
-        {
-          "type": "type_constructor_identifier",
-          "named": true
-        },
-        {
-          "type": "type_variable_identifier",
-          "named": true
-        },
-        {
-          "type": "unit_constructor",
           "named": true
         }
       ]

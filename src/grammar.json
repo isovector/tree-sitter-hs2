@@ -3530,20 +3530,15 @@
           ]
         },
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "type_class_identifier"
-            },
-            {
-              "type": "REPEAT",
-              "content": {
-                "type": "SYMBOL",
-                "name": "type_variable_identifier"
-              }
-            }
-          ]
+          "type": "SYMBOL",
+          "name": "type_class_identifier"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "type_variable_identifier"
+          }
         },
         {
           "type": "SYMBOL",
@@ -3613,8 +3608,16 @@
           ]
         },
         {
-          "type": "SYMBOL",
-          "name": "instance"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "instance"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         },
         {
           "type": "SYMBOL",
@@ -3625,33 +3628,8 @@
     "instance": {
       "type": "REPEAT1",
       "content": {
-        "type": "CHOICE",
-        "members": [
-          {
-            "type": "SYMBOL",
-            "name": "_general_type_constructor"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "parenthesized_instance"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "tuple_instance"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "list_instance"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "function_type_instance"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "type_variable_identifier"
-          }
-        ]
+        "type": "SYMBOL",
+        "name": "_atype"
       }
     },
     "parenthesized_instance": {
@@ -8449,6 +8427,10 @@
     ],
     [
       "instance",
+      "simple_class"
+    ],
+    [
+      "_atype",
       "simple_class"
     ]
   ],
