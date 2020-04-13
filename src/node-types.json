@@ -179,10 +179,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -515,10 +511,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -687,10 +679,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -839,10 +827,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -1045,10 +1029,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -1193,10 +1173,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -1770,10 +1746,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -1936,10 +1908,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -2084,10 +2052,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -2238,10 +2202,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -2389,10 +2349,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -2485,11 +2441,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "expression",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "expression_type_signature",
@@ -2633,10 +2584,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -2878,10 +2825,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -3026,10 +2969,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -3368,10 +3307,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -3520,10 +3455,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -3802,10 +3733,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -4000,10 +3927,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -4192,10 +4115,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -4520,10 +4439,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -4751,10 +4666,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -4941,10 +4852,18 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "function_constructor",
+          "named": true
+        },
+        {
+          "type": "function_type",
+          "named": true
+        },
+        {
+          "type": "infix_type_operator_application",
           "named": true
         },
         {
@@ -5316,10 +5235,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -5558,10 +5473,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -5725,10 +5636,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -5844,10 +5751,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "rules_pragma",
           "named": true
         },
@@ -5956,10 +5859,6 @@
         },
         {
           "type": "pattern_type_signature",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -6134,10 +6033,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -6286,10 +6181,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -6442,10 +6333,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -6714,10 +6601,6 @@
         },
         {
           "type": "qualified_module_identifier",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -7171,10 +7054,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -7333,7 +7212,7 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": false,
+      "required": true,
       "types": [
         {
           "type": "as_pattern",
@@ -7717,10 +7596,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -7994,46 +7869,6 @@
     }
   },
   {
-    "type": "quasi_quotation",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "expression",
-          "named": true
-        },
-        {
-          "type": "pattern",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation_expression",
-          "named": true
-        },
-        {
-          "type": "quoter",
-          "named": true
-        },
-        {
-          "type": "type",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "quasi_quotation_expression",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "record_data_constructor",
     "named": true,
     "fields": {},
@@ -8166,10 +8001,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -8351,10 +8182,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "right_operator_section",
           "named": true
         },
@@ -8518,10 +8345,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -8968,10 +8791,6 @@
         },
         {
           "type": "qualified_variable_operator",
-          "named": true
-        },
-        {
-          "type": "quasi_quotation",
           "named": true
         },
         {
@@ -9555,10 +9374,6 @@
           "named": true
         },
         {
-          "type": "quasi_quotation",
-          "named": true
-        },
-        {
           "type": "rules_pragma",
           "named": true
         },
@@ -10023,10 +9838,6 @@
     "named": false
   },
   {
-    "type": "declaration",
-    "named": true
-  },
-  {
     "type": "default",
     "named": false
   },
@@ -10145,10 +9956,6 @@
   {
     "type": "qualified",
     "named": false
-  },
-  {
-    "type": "quoter",
-    "named": true
   },
   {
     "type": "r",

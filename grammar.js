@@ -100,7 +100,6 @@ module.exports = grammar({
     [$._expression, $.expression_type_signature],
 
     [$._lexp, $.function_application],
-    [$.quasi_quotation, $.variable_identifier],
     [$._lexp, $._a_expression],
 
     [$.simple_class],
@@ -271,7 +270,6 @@ module.exports = grammar({
       $._general_declaration,
       $.function_declaration,
       $._pragma,
-      $.quasi_quotation,
       $.pattern_type_signature,
       $.bidirectional_pattern_synonym,
       $.unidirectional_pattern_synonym
@@ -496,7 +494,6 @@ module.exports = grammar({
       $.do,
       $.function_application,
       $._a_expression,
-      $.quasi_quotation
     ),
 
     lambda: $ => seq(
@@ -677,7 +674,7 @@ module.exports = grammar({
     negative_literal: $ => prec(1, seq('-', '(', choice($.integer, $.float), ')')),
 
     field_update: $ => seq(
-      choice($._variable, $.quasi_quotation),
+      $._variable,
       $.fields
     ),
 
@@ -714,7 +711,6 @@ module.exports = grammar({
       $.right_operator_section,
       $.labeled_construction,
       $.labeled_update,
-      prec.dynamic(1, $.quasi_quotation)
     ),
 
     labeled_update: $ => seq(
@@ -731,7 +727,6 @@ module.exports = grammar({
         $.right_operator_section,
         $.labeled_construction,
         $.labeled_update,
-        $.quasi_quotation
       ),
       '{',
       sep1(',', $.field_bind),
@@ -862,7 +857,7 @@ module.exports = grammar({
       $.where
     ),
 
-    instance: $ => repeat1($._atype),
+    instance: $ => repeat1($._type_pattern),
 
     parenthesized_instance: $ => seq(
       '(',
@@ -1774,31 +1769,6 @@ module.exports = grammar({
     _integer_literal: $ => token(decimalLiteral),
     _octal_literal:   $ => token(octalLiteral),
     _hexidecimal_literal: $ => token(hexLiteral),
-
-    quasi_quotation: $ => seq(
-      choice(
-        seq(
-          '[',
-          choice(
-            alias('p', $.pattern),
-            alias('d', $.declaration),
-            alias('t', $.type),
-            alias('e', $.expression),
-            alias($._variable_identifier, $.quoter)
-          ),
-          '|'
-        ),
-        alias($._empty_quasi_pattern, $.expression),
-      ),
-      $.quasi_quotation_expression
-    ),
-
-    _empty_quasi_pattern: $ => seq('[', '|'),
-
-    quasi_quotation_expression: $ => seq(
-      repeat(/[^|]/),
-      /.*\|\s*\]/
-    )
   }
 })
 
